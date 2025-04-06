@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numerology Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator-box">
+            <h1>✨ Numerology Calculator ✨</h1>
+            <div class="input-section">
+                <div class="input-group">
+                    <label for="fullName">Enter Your Full Name:</label>
+                    <input type="text" id="fullName" placeholder="Enter your full name">
+                </div>
+                <div class="input-group">
+                    <label for="birthDate">Enter Your Birth Date:</label>
+                    <input type="date" id="birthDate">
+                </div>
+                <button onclick="calculateNumerology()" class="calculate-btn">Calculate</button>
+            </div>
+            <div class="results-section" id="results">
+                <div class="result-card">
+                    <h3>Destiny Number</h3>
+                    <p id="destinyNumber">-</p>
+                </div>
+                <div class="result-card">
+                    <h3>Life Path Number</h3>
+                    <p id="lifePathNumber">-</p>
+                </div>
+                <div class="result-card">
+                    <h3>Soul Number</h3>
+                    <p id="soulNumber">-</p>
+                </div>
+                <div class="meaning-box" id="meaningBox">
+                    <h3>Your Numerology Reading</h3>
+                    <p id="numerologyMeaning"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
