@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ Advanced Numerology Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Indicator -->
+    <div id="loadingIndicator" class="loading-indicator">
+        <div class="loader"></div>
+        <p>Loading your numerological destiny...</p>
+    </div>
+
+    <div class="container">
+        <div class="calculator-box">
+            <div class="header">
+                <h1>✨ Numerology Calculator ✨</h1>
+                <p class="subtitle">Discover Your Life's Hidden Meanings</p>
+            </div>
+
+            <div class="input-section">
+                <div class="input-group">
+                    <label for="fullName">
+                        <span class="label-text">Your Full Name</span>
+                        <span class="label-icon">👤</span>
+                    </label>
+                    <input type="text" 
+                           id="fullName" 
+                           placeholder="Enter your full name"
+                           autocomplete="name">
+                </div>
+
+                <div class="input-group">
+                    <label for="birthDate">
+                        <span class="label-text">Your Birth Date</span>
+                        <span class="label-icon">📅</span>
+                    </label>
+                    <input type="date" 
+                           id="birthDate"
+                           max="2025-12-31">
+                </div>
+
+                <button id="calculateButton" class="calculate-btn">
+                    <span class="btn-icon">🔮</span>
+                    Calculate Your Numbers
+                </button>
+            </div>
+
+            <div class="results-section" id="results">
+                <div class="numbers-grid">
+                    <div class="result-card" data-number="destiny">
+                        <h3>Destiny Number</h3>
+                        <div class="number-circle">
+                            <span id="destinyNumber">-</span>
+                        </div>
+                    </div>
+
+                    <div class="result-card" data-number="life-path">
+                        <h3>Life Path Number</h3>
+                        <div class="number-circle">
+                            <span id="lifePathNumber">-</span>
+                        </div>
+                    </div>
+
+                    <div class="result-card" data-number="soul">
+                        <h3>Soul Number</h3>
+                        <div class="number-circle">
+                            <span id="soulNumber">-</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="meaning-box" id="meaningBox">
+                    <h3>Your Personal Numerology Reading</h3>
+                    <div id="numerologyMeaning" class="meaning-content"></div>
+                </div>
+            </div>
+
+            <footer class="calculator-footer">
+                <p>Created by @aryan6673 | Last Updated: 2025-04-06</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Loading Animation -->
+    <div class="cosmic-background">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./script.js"></script>
+</body>
+</html>
